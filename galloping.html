@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Satoshi’s Daemon Galloping – Satoshi’s Daemon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Jesse" />
+  <meta name="description" content="Satoshi’s Daemon gallops on the track for the first time." />
+
+ <style>
+    /* --- Global layout --- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f6;
+      color: #222;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #214d5c;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      max-width: 260px;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      background: #173b46;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    /* --- Main content — TWO-COLUMN GRID --- */
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+    }
+
+    article, aside {
+      background: #fff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    .post {
+      margin-bottom: 40px;
+    }
+
+    .post h2 {
+      margin-bottom: 5px;
+      color: #173b46;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      line-height: 1.6;
+    }
+
+    .post + .post {
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+
+    /* --- Sidebar --- */
+    aside h3 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    aside ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    aside li {
+      margin-bottom: 12px;
+    }
+
+    aside a {
+      color: #214d5c;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #173b46;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    article img {
+  display: block;
+  margin: 30px auto 0;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+/* Make the contract section span all grid columns */
+.contract-section {
+  grid-column: 1 / -1; /* Spans from first to last column */
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.contract-section p {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #214d5c;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-container code {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.copy-button {
+  background: #214d5c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: #173b46;
+}
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ===== Header ===== -->
+  <header>
+    <a href="index.html">
+      <img src="templates/turquoise-et/images/logo.png" alt="Satoshi's Daemon Logo">
+    </a>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="news.html">News</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Main ===== -->
+  <main>
+  <!-- ✅ Full-width contract section -->
+  <div class="contract-section">
+    <p><strong>Contract Address (CA):</strong></p>
+    <div class="copy-container">
+      <code id="contract-address">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</code>
+      <button id="copy-button" class="copy-button">Copy</button>
+    </div>
+  </div>
+    <!-- ===== Article ===== -->
+    <article>
+      <h1>Satoshi’s Daemon Galloping</h1>
+
+      <div class="meta">
+        Written by Jesse · Saturday, 01 October 2011 · 16:44
+      </div>
+
+      <p>
+        <em><strong>Satoshi’s Daemon</strong></em> galloped on the race track for the first time today.
+        Our trainer put blinkers on her, which limits her peripheral vision and
+        forces her to focus on what is in front of her. This is not uncommon.
+        You will see horses racing with blinkers on every day in almost every race.
+      </p>
+
+      <p>
+        Young horses in training tend to throw their heads up and want to look
+        around, which is not productive when they are training or racing.
+        As she matures and progresses, she may not require blinkers.
+      </p>
+
+      <p>
+        The exercise rider also had to use the whip to encourage Satoshi a bit.
+        The whip is a teaching tool in training, but the use will slowly diminish
+        as she learns to respond to verbal and rider body language commands.
+      </p>
+
+      <p>
+        She is ahead of where we anticipated she would be at this point, but the
+        key above all is to <em><strong>stay healthy</strong></em>. We do not want to
+        push her too hard too fast, as the slightest injury could only extend the
+        timeline to her first race.
+      </p>
+
+      <p>
+        She will continue to train at
+        <a href="http://tradersrestfarm.com/our-farm.shtml" target="_blank" rel="noopener">
+          Traders Rest Farm
+        </a>,
+        but for now she is taking it all in stride and progressing nicely.
+      </p>
+    </article>
+
+    <!-- ===== Sidebar ===== -->
+    <aside>
+      <h3>Horse News</h3>
+      <ul>
+        <li><a href="galloping.html">Satoshi’s Daemon Galloping</a></li>
+        <li><a href="name-change.html">Name change complete</a></li>
+        <li><a href="breaking-in.html">Breaking in</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Investor News</h3>
+      <ul>
+        <li><a href="general-info.html">General Investing Information</a></li>
+        <li><a href="dividends.html">Dividend Schedule (TBA)</a></li>
+        <li><a href="bylaws.html">Signed document at GLBSE</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    © 2011–2025 Satoshi’s Daemon · Historical GLBSE-era Bitcoin investment project
+  </footer>
+
+</div>
+</body>
+</html>

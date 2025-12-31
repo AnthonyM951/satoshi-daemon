@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dividend Schedule (TBA) — Satoshi's Daemon</title>
+  <meta name="description" content="Planned dividend structure for Satoshi's Daemon race horse BIRs on GLBSE." />
+  <meta name="keywords" content="Satoshi's Daemon, GLBSE, Bitcoin dividends, BIR, race horse, racing payouts" />
+  <meta name="author" content="Administrator" />
+
+  <style>
+    /* --- Global layout --- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f6;
+      color: #222;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #214d5c;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      max-width: 260px;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      background: #173b46;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 12px 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav .active a {
+      text-decoration: underline;
+      color: #a8dadc;
+    }
+
+    /* --- Main content --- */
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+    }
+
+    article, aside {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    article h1 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    article p {
+      line-height: 1.6;
+    }
+
+    pre {
+      background: #f8f9fa;
+      padding: 16px;
+      border-left: 4px solid #214d5c;
+      overflow-x: auto;
+      font-size: 0.95em;
+      line-height: 1.4;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    /* --- Sidebar --- */
+    aside h3 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    aside ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    aside li {
+      margin-bottom: 12px;
+    }
+
+    aside a {
+      color: #214d5c;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #173b46;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+      article, aside {
+        padding: 20px;
+      }
+    }
+
+
+    /* Make the contract section span all grid columns */
+.contract-section {
+  grid-column: 1 / -1; /* Spans from first to last column */
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.contract-section p {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #214d5c;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-container code {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.copy-button {
+  background: #214d5c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: #173b46;
+}
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <img src="templates/turquoise-et/images/logo.png" alt="Satoshi's Daemon Logo">
+    </a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a class="active" href="invest.html">Invest</a></li>
+      <li><a href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+      <!-- ✅ Full-width contract section -->
+  <div class="contract-section">
+    <p><strong>Contract Address (CA):</strong></p>
+    <div class="copy-container">
+      <code id="contract-address">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</code>
+      <button id="copy-button" class="copy-button">Copy</button>
+    </div>
+  </div>
+    <article>
+      <h1>Dividend Schedule (TBA)</h1>
+
+      <p>
+        First race of <em>Satoshi's Daemon</em> is set for January–February of 2012.
+        Check back for proposed dividend schedules (about 1–2 weeks before race),
+        followed by final dividend payouts within 24 hours of post time.
+        All dividend payouts will be digitally signed with the same signature found on the GLBSE.
+      </p>
+
+      <pre>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+*-*-*-*-* Good Faith Deposits *-*-*-*-*
+
+All dividend payments will be held in bitcoin addresses starting with "1Daemon" (case sensitive)
+
+Launch: Hold 100 coins until first race is announced: 1Daemon7kXmCjuFvaVwiPWoZJqcLtZnbiH
+
+
+*-*-*-*-* Racing Dividends *-*-*-*-*
+
+Location: (TBA)
+Race No.: (TBA)
+Purse: (TBA)
+Payout Date: (TBA)
+Payout Time (ET): (TBA)
+
+Expected Dividend Payout to each BIR share
+
+1st: (TBA btc/BIR)
+2nd: (TBA btc/BIR)
+3rd: (TBA btc/BIR)
+4th: (TBA btc/BIR)
+5th: (TBA btc/BIR)
+6th: (TBA btc/BIR)
+7th: (TBA btc/BIR)
+[more]
+
+*-*-*-*-* Claiming Dividends *-*-*-*-*
+
+(If applicable) TBD
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.14 (GNU/Linux)
+
+iQEcBAEBAgAGBQJOiHeSAAoJEK0GGa6KCwTtNggIAMazmYMGRkS9NIGFnwK6fAQm
+RCYzkS3rMZhe1ZJhiuujFuuEvuFw/1kHQbxJm0P3gpdi/yrV7qH3wSU/6L1xBaIi
+G+IKfW1rxjZHT+QImBIOJoL1DK3/o9gm0cltZHNTpszaHa4nX4eJvqNunYjS3wMP
+d99AKWAL/IQ6qCQd12r+CO9QKHWxMYiiIvViIipdvAm5Or9TPwSFZQfami1Y/kCz
+nadEP6ZsBhk3dwB/SGYvthzfPNyCfTIC6LRPhSxltzNmXBypWpLPKmYNX/R+Zcg0
+5zy6zSuMl1z5nG4hy8vWMTQ7pHOu3XsOwCBkQPXheDvkNTb3umTbVp2IchcF4D0=
+=4vZ9
+-----END PGP SIGNATURE-----</pre>
+    </article>
+
+    <aside>
+      <h3>Horse News</h3>
+      <ul>
+        <li><a href="galloping.html">Satoshi's Daemon Galloping</a></li>
+        <li><a href="name-change.html">Name change complete</a></li>
+        <li><a href="breaking-in.html">Breaking in</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Investor News</h3>
+      <ul>
+        <li><a href="general-info.html">General Investing Information</a></li>
+        <li><a href="dividends.html">Dividend Schedule (TBA)</a></li>
+        <li><a href="bylaws.html">Signed document at GLBSE</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Satoshi's Daemon — A race horse funded through decentralized markets (GLBSE era).
+  </footer>
+
+</div>
+</body>
+</html>

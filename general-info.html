@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>General Investing Information — Satoshi's Daemon</title>
+  <meta name="description" content="Details about Bitcoin Interest Rights (BIRs) for Satoshi's Daemon race horse on GLBSE." />
+  <meta name="keywords" content="Satoshi's Daemon, GLBSE, Bitcoin, BIR, investing, race horse, decentralized funding" />
+  <meta name="author" content="Administrator" />
+
+  <style>
+    /* --- Global layout --- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f6;
+      color: #222;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #214d5c;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      max-width: 260px;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      background: #173b46;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 12px 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav .active a {
+      text-decoration: underline;
+      color: #a8dadc;
+    }
+
+    /* --- Main content --- */
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+    }
+
+    article, aside {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    article h1 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    article p {
+      line-height: 1.6;
+    }
+
+    article a {
+      color: #214d5c;
+      font-weight: bold;
+    }
+
+    /* --- Sidebar --- */
+    aside h3 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    aside ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    aside li {
+      margin-bottom: 12px;
+    }
+
+    aside a {
+      color: #214d5c;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #173b46;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+      article, aside {
+        padding: 20px;
+      }
+    }
+
+    /* Make the contract section span all grid columns */
+.contract-section {
+  grid-column: 1 / -1; /* Spans from first to last column */
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.contract-section p {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #214d5c;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-container code {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.copy-button {
+  background: #214d5c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: #173b46;
+}
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <img src="templates/turquoise-et/images/logo.png" alt="Satoshi's Daemon Logo">
+    </a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a class="active" href="invest.html">Invest</a></li>
+      <li><a href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+      <!-- ✅ Full-width contract section -->
+  <div class="contract-section">
+    <p><strong>Contract Address (CA):</strong></p>
+    <div class="copy-container">
+      <code id="contract-address">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</code>
+      <button id="copy-button" class="copy-button">Copy</button>
+    </div>
+  </div>
+    <article>
+      <h1>General Investing Information</h1>
+
+      <p>
+        "Bitcoin Interest Rights" (BIRs) are traded on the 
+        <a href="https://www.glbse.com/" target="_blank" rel="noopener">GLBSE</a> 
+        under the ticker symbol <strong>"SATOSHISDAEMON.HORSE"</strong>.
+      </p>
+
+      <p>
+        BIRs have no ownership rights and are denominated in bitcoins 
+        (<a href="https://www.bitcoin.org/" target="_blank" rel="noopener">www.bitcoin.org</a>).
+      </p>
+
+      <p>
+        The owners of <em>Satoshi's Daemon</em> are putting up their own bitcoins,
+        and have offered to disburse these coins to those willing to accept the risk
+        associated with bitcoins and thoroughbred racing.
+      </p>
+
+      <p>
+        Under no circumstances will holders of BIRs be entitled to any US dollar winnings—
+        only the bitcoins pledged before each race by the owners.
+      </p>
+
+      <p>
+        Please visit the GLBSE and read the signed contract information.
+      </p>
+    </article>
+
+    <aside>
+      <h3>Horse News</h3>
+      <ul>
+        <li><a href="galloping.html">Satoshi's Daemon Galloping</a></li>
+        <li><a href="name-change.html">Name change complete</a></li>
+        <li><a href="breaking-in.html">Breaking in</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Investor News</h3>
+      <ul>
+        <li><a href="general-info.html">General Investing Information</a></li>
+        <li><a href="dividends.html">Dividend Schedule (TBA)</a></li>
+        <li><a href="bylaws.html">Signed document at GLBSE</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Satoshi's Daemon — A race horse funded through decentralized markets (GLBSE era).
+  </footer>
+
+</div>
+</body>
+</html>

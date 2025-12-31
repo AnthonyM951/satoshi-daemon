@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Breaking in — Satoshi's Daemon</title>
+  <meta name="description" content="Update on Satoshi's Daemon's early training: breaking in phase." />
+  <meta name="keywords" content="Satoshi's Daemon, race horse, breaking in, training, GLBSE, Bitcoin" />
+  <meta name="author" content="Administrator" />
+
+  <style>
+    /* --- Global layout --- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f6;
+      color: #222;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #214d5c;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      max-width: 260px;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      background: #173b46;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 12px 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover, nav .active a {
+      text-decoration: underline;
+      color: #a8dadc;
+    }
+
+    /* --- Main content --- */
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+    }
+
+    article, aside {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    article h1 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    .post-meta {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    article p {
+      line-height: 1.6;
+    }
+
+    /* --- Sidebar --- */
+    aside h3 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    aside ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    aside li {
+      margin-bottom: 12px;
+    }
+
+    aside a {
+      color: #214d5c;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #173b46;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* --- Mobile responsive --- */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+      article, aside {
+        padding: 20px;
+      }
+    }
+
+    /* Make the contract section span all grid columns */
+.contract-section {
+  grid-column: 1 / -1; /* Spans from first to last column */
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.contract-section p {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #214d5c;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-container code {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.copy-button {
+  background: #214d5c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: #173b46;
+}
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <img src="templates/turquoise-et/images/logo.png" alt="Satoshi's Daemon Logo">
+    </a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="news.html">News</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+      <!-- ✅ Full-width contract section -->
+  <div class="contract-section">
+    <p><strong>Contract Address (CA):</strong></p>
+    <div class="copy-container">
+      <code id="contract-address">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</code>
+      <button id="copy-button" class="copy-button">Copy</button>
+    </div>
+  </div>
+    <article>
+      <h1>Breaking in</h1>
+      <div class="post-meta">Written by Administrator — Tuesday, 20 September 2011</div>
+
+      <p>
+        After the first 45 days of training, she will be fully broken and galloping.
+        We would then get in 3–5 works spaced 7–10 days apart.
+      </p>
+
+      <p>
+        If all goes well, she should be ready to race in late January or early February.
+      </p>
+    </article>
+
+    <aside>
+      <h3>Horse News</h3>
+      <ul>
+        <li><a href="galloping.html">Satoshi's Daemon Galloping</a></li>
+        <li><a href="name-change.html">Name change complete</a></li>
+        <li><a href="breaking-in.html">Breaking in</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Investor News</h3>
+      <ul>
+        <li><a href="general-info.html">General Investing Information</a></li>
+        <li><a href="dividends.html">Dividend Schedule (TBA)</a></li>
+        <li><a href="bylaws.html">Signed document at GLBSE</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Satoshi's Daemon — A race horse funded through decentralized markets (GLBSE era).
+  </footer>
+
+</div>
+</body>
+</html>

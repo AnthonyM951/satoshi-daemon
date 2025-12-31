@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buy $DAEMON — Satoshi's Daemon</title>
+  <meta name="description" content="Buy $DAEMON (Satoshi's Daemon) on Solana. Contract address, trading links, and live chart." />
+  <meta name="keywords" content="SatosHI's Daemon, $DAEMON, Solana, buy token, pump.fun, dexscreener, crypto horse" />
+  <meta name="author" content="Administrator" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    /* --- Global layout --- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f6;
+      color: #222;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #214d5c;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      max-width: 260px;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      background: #173b46;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    /* --- Main content — TWO-COLUMN GRID --- */
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+    }
+
+    article, aside {
+      background: #fff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    .contract-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .contract-section p {
+      margin: 0 0 10px;
+      font-weight: bold;
+      color: #214d5c;
+    }
+
+    .copy-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .copy-container code {
+      flex: 1;
+      min-width: 200px;
+      background: #f8f9fa;
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      font-size: 14px;
+      word-break: break-all;
+    }
+
+    .copy-button {
+      background: #214d5c;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .copy-button:hover {
+      background: #173b46;
+    }
+
+    .links-section h2 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    .links-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .links-section li {
+      margin-bottom: 12px;
+    }
+
+    .links-section a {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #214d5c;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .links-section a:hover {
+      background: #173b46;
+      text-decoration: none;
+    }
+
+    /* --- Sidebar --- */
+    aside h3 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    aside ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    aside li {
+      margin-bottom: 12px;
+    }
+
+    aside a {
+      color: #214d5c;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #173b46;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      .copy-container {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .copy-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <img src="templates/turquoise-et/images/logo.png" alt="Satoshi's Daemon Logo">
+    </a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a class="active" href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <main>
+
+    <article>
+      <h1>Buy $DAEMON on Solana</h1>
+
+      <!-- Contract Address -->
+      <div class="contract-section">
+        <p><strong>Contract Address (CA):</strong></p>
+        <div class="copy-container">
+          <code id="contract-address">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</code>
+          <button id="copy-button" class="copy-button">Copy</button>
+        </div>
+      </div>
+
+      <!-- Trading Links -->
+      <div class="links-section">
+        <h2>Trade $DAEMON</h2>
+        <ul>
+          <li><a href="https://pump.fun/coin/HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump" target="_blank" rel="noopener">Buy on Pump.fun</a></li>
+          <li><a href="https://dexscreener.com/solana/BhTYEA4iQthYPGxNb8gUBAUgh2N8wzUh1JSiEwLKst5b" target="_blank" rel="noopener">View Chart on DexScreener</a></li>
+        </ul>
+      </div>
+
+      <p>
+        $DAEMON is the spiritual successor to the original <em>Satoshi's Daemon</em> — 
+        the first community-funded racehorse on GLBSE in 2011. Now reborn on Solana, 
+        it honors crypto history with a modern twist.
+      </p>
+
+      <p>
+        The team has secured the original domain <a href="https://www.satoshisdaemon.com" target="_blank" rel="noopener">satoshisdaemon.com</a>, 
+        ensuring authenticity and making $DAEMON <strong>unvampable</strong>.
+      </p>
+    </article>
+
+    <aside>
+      <h3>Horse News</h3>
+      <ul>
+        <li><a href="galloping.html">Satoshi's Daemon Galloping</a></li>
+        <li><a href="name-change.html">Name change complete</a></li>
+        <li><a href="breaking-in.html">Breaking in</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Investor News</h3>
+      <ul>
+        <li><a href="general-info.html">General Investing Information</a></li>
+        <li><a href="dividends.html">Dividend Schedule (TBA)</a></li>
+        <li><a href="bylaws.html">Signed document at GLBSE</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Satoshi's Daemon — A race horse funded through decentralized markets (GLBSE era).
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('copy-button').addEventListener('click', function() {
+    const addr = document.getElementById('contract-address').innerText;
+    navigator.clipboard.writeText(addr).then(() => {
+      const btn = this;
+      const original = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => btn.innerText = original, 2000);
+    });
+  });
+</script>
+
+</body>
+</html>

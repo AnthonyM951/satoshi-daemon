@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>News — Satoshi's Daemon</title>
+
+  <meta name="description" content="Latest news and training updates for Satoshi's Daemon." />
+  <meta name="keywords" content="Satoshi's Daemon, horse racing, news, GLBSE" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f6;
+      color: #222;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: #214d5c;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      max-width: 260px;
+    }
+
+    /* Navigation */
+    nav {
+      background: #173b46;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    /* Layout */
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+    }
+
+    article, aside {
+      background: #fff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    .post {
+      margin-bottom: 40px;
+    }
+
+    .post h2 {
+      margin-bottom: 5px;
+      color: #173b46;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      line-height: 1.6;
+    }
+
+    .post + .post {
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+
+    /* Sidebar */
+    aside h3 {
+      margin-top: 0;
+      color: #214d5c;
+    }
+
+    aside ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    aside li {
+      margin-bottom: 12px;
+    }
+
+    aside a {
+      color: #214d5c;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: #173b46;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+
+    /* Make the contract section span all grid columns */
+.contract-section {
+  grid-column: 1 / -1; /* Spans from first to last column */
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.contract-section p {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #214d5c;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-container code {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.copy-button {
+  background: #214d5c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: #173b46;
+}
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header>
+    <!-- Original Satoshi's Daemon logo -->
+    <a href="index.html">
+      <img src="templates/turquoise-et/images/logo.png" alt="Satoshi's Daemon Logo">
+    </a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="news.html">News</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <main>
+  <!-- ✅ Full-width contract section -->
+  <div class="contract-section">
+    <p><strong>Contract Address (CA):</strong></p>
+    <div class="copy-container">
+      <code id="contract-address">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</code>
+      <button id="copy-button" class="copy-button">Copy</button>
+    </div>
+  </div>
+    <article>
+      <h1>News</h1>
+
+      <div class="post">
+        <h2>Satoshi's Daemon Galloping</h2>
+        <div class="meta">Written by Jesse — Saturday, 01 October 2011</div>
+
+        <p>
+          <strong><em>Satoshi's Daemon</em></strong> galloped on the race track for the first time today.
+          Our trainer put blinkers on her, which limits her peripheral vision and forces her to focus
+          on what is in front of her. This is not uncommon.
+        </p>
+
+        <p>
+          Young horses in training tend to throw their heads up and want to look around, which is not
+          productive when training or racing. As she matures and progresses, she may not require blinkers.
+        </p>
+
+        <p>
+          The exercise rider also used the whip to encourage her slightly. The whip is a teaching tool
+          in training, and its use will diminish as she learns to respond to verbal and rider body
+          language commands.
+        </p>
+
+        <p>
+          She is ahead of where we anticipated she would be at this point, but the key above all is to
+          <strong><em>stay healthy</em></strong>. Pushing too hard too fast could delay her first race.
+        </p>
+
+        <p>
+          She will continue training at
+          <a href="http://tradersrestfarm.com/our-farm.shtml" target="_blank" rel="noopener">Traders Rest Farm</a>Traders Rest Farm</a>,
+          progressing nicely and taking everything in stride.
+        </p>
+      </div>
+
+      <div class="post">
+        <h2>Name change complete</h2>
+        <div class="meta">Written by Administrator — Monday, 26 September 2011</div>
+
+        <p>
+          The Jockey Club has approved the name change to
+          <strong><em>Satoshi's Daemon</em></strong>.
+        </p>
+
+        <p>
+          <a href="images/PDF/namechange.pdf" target="_blank">(namechange.pdf)</a>
+        </p>
+      </div>
+
+      <div class="post">
+        <h2>Breaking in</h2>
+        <div class="meta">Written by Administrator — Tuesday, 20 September 2011</div>
+
+        <p>
+          After the first 45 days of training, she will be fully broken and galloping.
+          We would then get in 3–5 works spaced 7–10 days apart.
+        </p>
+
+        <p>
+          If all goes well, she should be ready to race in late January or early February.
+        </p>
+      </div>
+
+    </article>
+
+<aside>
+  <h3>Horse News</h3>
+  <ul>
+    <li><a href="galloping.html">Satoshi's Daemon Galloping</a></li>
+    <li><a href="name-change.html">Name change complete</a></li>
+    <li><a href="breaking-in.html">Breaking in</a></li>
+  </ul>
+
+  <h3 style="margin-top:20px;">Investor News</h3>
+  <ul>
+    <li><a href="general-info.html">General Investing Information</a></li>
+    <li><a href="dividends.html">Dividend Schedule (TBA)</a></li>
+    <li><a href="bylaws.html">Signed document at GLBSE</a></li>
+  </ul>
+</aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Satoshi's Daemon — A race horse funded through decentralized markets (GLBSE era).
+  </footer>
+
+</div>
+</body>
+</html>
